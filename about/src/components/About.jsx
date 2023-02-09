@@ -5,7 +5,7 @@ const About = (props) => {
     return (<div className='container-about'>
             <img className='img-profile'
                 src={require(`../assets/img/profile${props.image}.jpg`)}
-                alt="profile1"
+                alt={props.image}
             />
 
             <div className='content-about'>
@@ -20,3 +20,4 @@ const About = (props) => {
 }
 
 export {About}
+
