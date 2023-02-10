@@ -13,7 +13,7 @@ function App() {
     }
 
     const restartCounter = () => {
-       setNumClicks(0)
+        setNumClicks(0)
     }
 
     return (<div className="App">
