@@ -11,11 +11,11 @@ function App() {
 
     const addInput = (val) => {
         setinput(input + val)
-    }
+    };
 
     const manageClear = () => {
         setinput('')
-    }
+    };
 
     const result = () => {
         if (input) {
@@ -23,7 +23,7 @@ function App() {
         }else {
             alert('Por favor ingrese un valor')
         }
-    }
+    };
 
     return (
         <div className='App'>

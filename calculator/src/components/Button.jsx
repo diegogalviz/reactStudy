@@ -8,11 +8,11 @@ const Button = (props) => {
     }
 
     return(
-        <div
+        <button
             className={`button-container ${operator(props.children) ? 'operator' : ''}`.trimEnd()}
             onClick={() => props.manageButton(props.children)}>
             {props.children}
-        </div>
+        </button>
     )
 }
 
