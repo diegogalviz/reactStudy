@@ -8,6 +8,7 @@ import {evaluate} from 'mathjs';
 import {Logo} from "./components/Logo";
 
 function App() {
+    // Funciones
     const [input, setInput] = useState('')
 
     const addInput = (val) => {
