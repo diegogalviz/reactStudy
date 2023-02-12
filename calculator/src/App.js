@@ -5,35 +5,30 @@ import {Display} from "./components/Display";
 import {ButtonClear} from "./components/ButtonClear";
 import {useState} from "react";
 import {evaluate} from 'mathjs';
+import {Logo} from "./components/Logo";
 
 function App() {
-    const [input, setinput] = useState('')
+    const [input, setInput] = useState('')
 
     const addInput = (val) => {
-        setinput(input + val)
+        setInput(input + val)
     };
 
     const manageClear = () => {
-        setinput('')
+        setInput('')
     };
 
     const result = () => {
         if (input) {
-            setinput(evaluate(input))
-        }else {
+            setInput(evaluate(input))
+        } else {
             alert('Por favor ingrese un valor')
         }
     };
 
     return (
         <div className='App'>
-            <div className='logo-diego-container'>
-                <img
-                    className='logo-diego'
-                    src={logoDiego}
-                    alt="logo de diego galviz"/>
-            </div>
-
+            <Logo ruta={logoDiego}/>
             <div className='container'>
                 <Display
                     input={input}

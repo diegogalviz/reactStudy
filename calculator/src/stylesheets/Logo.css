@@ -1,0 +1,11 @@
+.logo-diego-container{
+    height: 50px;
+    margin: 8px;
+    display: grid;
+    place-content: center;
+
+}
+
+.logo-diego{
+    height: 70px;
+}
