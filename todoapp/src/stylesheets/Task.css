@@ -10,7 +10,20 @@
     border-radius: 7px;
     border: 1px solid #f5f6f7;
     cursor: pointer;
-    color: #313b4c;
+    color: #f5f6f7;
+    user-select: none;
+}
+
+.task-container:nth-child(3n +1) {
+    background-color: #1b1b32;
+}
+
+.task-container:nth-child(3n +2) {
+    background-color: #2a2a40;
+}
+
+.task-container:nth-child(3n +3) {
+    background: #3b3b4f;
 }
 
 .task-text{
